@@ -13,6 +13,7 @@ import axios from 'axios';
 
 export default function ActionAreaCard() {
     const [cardData, setCardData] = useState([]);
+    const [topCard,setTopCard] = useState([]);
 
     // Function to fetch data
     const loadCardData = async () => {
@@ -23,10 +24,21 @@ export default function ActionAreaCard() {
         console.error('Error fetching card data:', error);
       }
     };
+
+    const loadTopCarddata = async () => {
+        try {
+          const res = await axios.get(`https://qtify-backend-labs.crio.do/albums/new`);
+          setTopCard(res.data); // Access the `.data` field to get the actual response body
+        } catch (error) {
+          console.error('Error fetching card data:', error);
+        }
+      };
+  
   
     // Fetch data only once when the component mounts
     useEffect(() => {
       loadCardData();
+      loadTopCarddata();
     }, []);
 
   return (
@@ -60,7 +72,7 @@ export default function ActionAreaCard() {
 <Section title="New Albums" button="Show All"/>
 <div className='cardWrap'>
 
-{cardData.map((val) => (
+{topCard.map((val) => (
         <Card sx={{ maxWidth: 159 }} className="card" key={val.id}>
           <CardActionArea>
             <div className="top-card">
