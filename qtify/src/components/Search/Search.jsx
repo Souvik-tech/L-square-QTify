@@ -60,7 +60,8 @@ function Search({ searchData, placeholder }) {
     <div style={{ position: "relative" }}>
   <div >
       <TextField
-        label="Search an album of your choice"
+        
+        placeholder="Search a album of your choice"
         variant="outlined"
         fullWidth
         InputProps={{
