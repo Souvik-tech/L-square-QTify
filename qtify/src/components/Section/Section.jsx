@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-const Section = ({title}) => {
+const Section = ({title , button}) => {
   return (
     <div className='section'>
         <h2>{title}</h2>
-        <Button>Collapse</Button>
+        <Button>{button}</Button>
     </div>
   )
 }

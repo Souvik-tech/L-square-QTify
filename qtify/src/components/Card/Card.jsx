@@ -31,7 +31,7 @@ export default function ActionAreaCard() {
 
   return (
     <>
-<Section title="Top Albums"/>
+<Section title="Top Albums" button="Collapse"/>
 <div className='cardWrap'>
 
 {cardData.map((val) => (
@@ -57,7 +57,7 @@ export default function ActionAreaCard() {
       ))}
       
 </div>
-<Section title="New Albums"/>
+<Section title="New Albums" button="Show All"/>
 <div className='cardWrap'>
 
 {cardData.map((val) => (
