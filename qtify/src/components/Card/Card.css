@@ -1,0 +1,29 @@
+.card{
+    background-color: var(--color-black) !important;
+    margin:0 20px;
+    min-width: 160px;
+}
+
+.card-image{
+    margin-bottom: 20px;
+    height: 170px;
+}
+.top-card{
+    background-color: #fff;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-chip{
+    text-align: left;
+    background-color: var(--color-black)!important;
+    color: #fff!important;
+}
+.card .card-heading{
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}

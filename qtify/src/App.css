@@ -20,6 +20,9 @@ body{
   --color-black : #121212;
   --pane-padding: 5px 42px;
 }
+body{
+  background-color: var(--color-black);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,7 +37,19 @@ body{
 .App-link {
   color: #61dafb;
 }
-
+.section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section h2{
+  color: #fff;
+}
+.cardWrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
