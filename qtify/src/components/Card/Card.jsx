@@ -31,7 +31,7 @@ export default function ActionAreaCard() {
 
   return (
     <>
-<Section/>
+<Section title="Top Albums"/>
 <div className='cardWrap'>
 
 {cardData.map((val) => (
@@ -55,6 +55,33 @@ export default function ActionAreaCard() {
           </CardActionArea>
         </Card>
       ))}
+      
+</div>
+<Section title="New Albums"/>
+<div className='cardWrap'>
+
+{cardData.map((val) => (
+        <Card sx={{ maxWidth: 159 }} className="card" key={val.id}>
+          <CardActionArea>
+            <div className="top-card">
+              <CardMedia
+                className="card-image"
+                component="img"
+                height="140"
+                image={val.image}
+                alt={val.title}
+              />
+              <Chip label={`${val.follows} follows`} className="card-chip" />
+            </div>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div" className="card-heading">
+                {val.title}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      ))}
+      
 </div>
     </>
   );
