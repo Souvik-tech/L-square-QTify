@@ -37,7 +37,7 @@ body{
 .App-link {
   color: #61dafb;
 }
-.section{
+.section .top{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,10 +45,10 @@ body{
 .section h2{
   color: #fff;
 }
-.cardWrap{
+.cardWrapFlex{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 @keyframes App-logo-spin {
   from {
