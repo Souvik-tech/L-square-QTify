@@ -19,7 +19,7 @@ const CollapsableSection = ({ title, isCollapsed, dataUrl }) => {
         </Button>
       </div>
 
-      <ActionAreaCard dataUrl={dataUrl} isCollapsed={collapse} />
+      <ActionAreaCard dataUrl={dataUrl} isSlidable={collapse} />
     </div>
   );
 };
