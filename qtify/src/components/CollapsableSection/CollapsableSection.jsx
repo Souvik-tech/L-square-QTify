@@ -15,7 +15,7 @@ const CollapsableSection = ({ title, isCollapsed, dataUrl }) => {
       <div className="top">
         <h2>{title}</h2>
         <Button onClick={toggleCollapse}>
-          {collapse ? "Collapse" : "Show All"}
+          {collapse ? "Show All" : "Collapse"}
         </Button>
       </div>
 
