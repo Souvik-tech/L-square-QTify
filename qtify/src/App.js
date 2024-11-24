@@ -20,13 +20,13 @@ function App() {
         {/* top album section */}
         <CollapsableSection
           title={"Top Albums"}
-          isCollapsed={true}
+          isCollapsed={false}
           dataUrl={TOP_ALBUM_URL}
         />
         {/* new album section */}
         <CollapsableSection
           title={"New Albums"}
-          isCollapsed={false}
+          isCollapsed={true}
           dataUrl={NEW_ALBUM_URL}
         />
         <TabSection 
