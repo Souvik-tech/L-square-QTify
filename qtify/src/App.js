@@ -26,7 +26,7 @@ function App() {
         {/* new album section */}
         <CollapsableSection
           title={"New Albums"}
-          isCollapsed={true}
+          isCollapsed={false}
           dataUrl={NEW_ALBUM_URL}
         />
         <TabSection 
