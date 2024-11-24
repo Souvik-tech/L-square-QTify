@@ -87,7 +87,7 @@ export default function ActionAreaCard({
       }
       return true;
     });
-    console.log(data);
+    // console.log(data);
     return data;
   }
 

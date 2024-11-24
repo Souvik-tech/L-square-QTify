@@ -10,7 +10,7 @@ function TabSection({ dataUrl, tabsUrl }) {
 
   function handleChange(e, newVal) {
     if (newVal !== 0) {
-        console.log(allTabs[newVal])
+        // console.log(allTabs[newVal])
       setFilters({ genre: allTabs[newVal] });
     } else {
         setFilters({});
@@ -20,13 +20,13 @@ function TabSection({ dataUrl, tabsUrl }) {
   const fetchTabsData = async () => {
     try {
       const res = await axios.get(tabsUrl);
-      console.log("resdata", res.data.data);
+      // console.log("resdata", res.data.data);
       setAllTabs([{ key: "all", label: "All" }, ...res.data.data]);
     } catch (error) {
       console.error("Error fetching card data:", error);
     }
   };
-  console.log(currentTab);
+  // console.log(currentTab);
   useEffect(() => {
     fetchTabsData();
   }, []);
